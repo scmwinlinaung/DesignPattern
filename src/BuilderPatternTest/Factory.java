@@ -30,9 +30,12 @@ public class Factory {
         builder.setDisplay(Display.SUPER_AMOLED);
         builder.setOS(OS.IOS);
         List<Sensor> sensorList = new LinkedList<>();
+        sensorList.add(new Sensor("Barometer", ""));
+        sensorList.add(new Sensor("High dynamic range gyro", ""));
         builder.setSensor(sensorList);
         builder.setSIM(List.of(SIM.NANO_SIM, SIM.E_SIM));
         builder.setSpeaker(Speaker.STERO_SPEAKER);
+        builder.set5MMAudioJack(0);
     }
     // To Do
     public void buildGooglePixel8Pro(){}

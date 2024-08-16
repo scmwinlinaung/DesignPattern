@@ -8,10 +8,12 @@ public class Main {
         factory.buildSamsaungS24(builder);
         SmartPhone samsaungS24 = builder.getSmartPhone();
         System.out.println("Samsaung CPU : " + samsaungS24.getCpu().getName());
+        System.out.println("Samsaung Audio Jack : " + samsaungS24.getAudioJack());
 
         factory.buildIphone14(builder);
         SmartPhone iphone14 = builder.getSmartPhone();
         System.out.println("Iphone CPU : " + iphone14.getCpu().getName());
+        System.out.println("Iphone Audio Jack : " + iphone14.getAudioJack());
 
     }
 }
